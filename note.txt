@@ -1,0 +1,37 @@
+Q1: What are Key features of MongoDB?
+
+Mongodb is an open-source document database that provides high performance, high availability , and automatic scaling.
+
+its Key features are:
+* Document oridented and NoSQL database.
+* Supports Aggregation
+* Uses BSON format
+* Sharding 
+* Supports
+* Schema Less
+* Capped Collection
+* Indexing (Any field in MongoDB can be indexed)
+* Mongo Replica Set (provides high availability)
+* Supports Muiltiple Storage Engines
+* ACID compilance including multi-document transactions support
+
+Q2: When should consider embedded document within anothe in MongoDB ?
+
+you should consider embedded documents(subdocuments) for:
+
+* When the relationship is one-to-few (not many, not unlimited). For unlimited use case, you should considering separating subdocument into another Collection.
+
+* When retrival is likely to happen together, that will improve performace
+
+* When updates are likly to happen at the same time. Although starting from MongoDB 4.0, you can multi-documents transactions, a single document transaction would be more performant 
+
+* When the field is rarly updated
+
+Q3: What is Sharding in MongoDB?
+
+* Sharding is a method for distributing data across multiple machines. MongoDB uses sharding to support deployments with very large data sets and high throughput operations. MongoDB supports horizontal scaling thorugh sharding. MongoDB shards data at the colleection level, disturbing the collection data across the shards in the cluster.
+
+Q4: What are indexes in MongoDB?
+
+* Indexes support the efficient execution of quires in MongoDB. Without indexes, MongoDB must perform a collection scan, i.e scan every document
+
