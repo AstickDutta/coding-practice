@@ -305,58 +305,58 @@ console.log(capitalize('js string exercises'));
 
 //   console.log(b);
 
-// function StringChallenge(sen) {
+ function StringChallenge(sen) {
 
 //     // code goes here
-//       const codewords = sen.split(" ");
-//        let newword = "";
-//        let max = 0;
-//        for(let word of codewords){
-//          const createword = word.replace(/[^a-zA-Z0-9]/gi,'');
-//            if(createword.length>max){
-//              newword = createword
-//              max = createword.length
-//            }
-//        }
-//        var token = "o8vpxlnyc7ad"
-//        var histri = newword + token;
-//         var d = histri.split("");
-//         for(let i=3;i<d.length-1;i+=4){
-//               d[i]= "_"
-//               var arustr = d.join("");
-//         }
+      const codewords = sen.split(" ");
+       let newword = "";
+       let max = 0;
+       for(let word of codewords){
+         const createword = word.replace(/[^a-zA-Z0-9]/gi,'');
+           if(createword.length>max){
+             newword = createword
+             max = createword.length
+           }
+       }
+       var token = "o8vpxlnyc7ad"
+       var histri = newword + token;
+        var d1 = histri.split("");
+        for(let i=3;i<d1.length-1;i+=4){
+          d1[i]= "_"
+              var arustr = d1.join("");
+        }
 
-//        return arustr;
-//   }
+       return arustr;
+  }
 
-//   // keep this function call here
-//   console.log(StringChallenge(readline()));
+  // keep this function call here
+  console.log(StringChallenge(readline()));
 
-//   function StringChallenge(str) {
+  function StringChallenge(str) {
 
-//     // code goes here
+    // code goes here
 
-//      var obj = {};
-//      var newarr = [];
-//      for(let i=0;i<str.length;i++){
-//        obj[str[i]] = (obj[str[i]]||0)+1;
-//      }
-//          var f = Object.keys(obj);
-//          var g = Object.values(obj);
-//          for(let j=0;j<f.length;j++){
-//            newarr.push(g[j]);
-//            newarr.push(f[j]);
-//          }
-//          var token = "o8vpxlnyc7ad";
-//          var dul = newarr.join("");
-//          var nul = dul + token;
-//          var d = nul.split("");
-//          for(let k=3;k<d.length-1;k+=4){
-//            d[k] = "_"
-//            var a = d.join("")
-//          }
-//          return a;
-//   }
+     var obj = {};
+     var newarr = [];
+     for(let i=0;i<str.length;i++){
+       obj[str[i]] = (obj[str[i]]||0)+1;
+     }
+         var f = Object.keys(obj);
+         var g = Object.values(obj);
+         for(let j=0;j<f.length;j++){
+           newarr.push(g[j]);
+           newarr.push(f[j]);
+         }
+         var token = "o8vpxlnyc7ad";
+         var dul = newarr.join("");
+         var nul = dul + token;
+         var d = nul.split("");
+         for(let k=3;k<d.length-1;k+=4){
+           d[k] = "_"
+           var a = d.join("")
+         }
+         return a;
+  }
 
 //   // keep this function call here
 //   console.log(StringChallenge(readline()));
