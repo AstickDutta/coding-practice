@@ -2,10 +2,10 @@
 // function findPairNumberZero(arr){
 //     let left = 0
 //     let right = arr.length-1
-  
+
 //     while(left<right){
 //       sum = arr[left] + arr[right]
-  
+
 //       if(sum == 0){
 //         return [arr[left], arr[right]];
 //       }else if(sum>0){
@@ -15,7 +15,7 @@
 //       }
 //     }
 //   }
-  
+
 //   const result = findPairNumberZero( [-2,-3,-4,1,5,2])
 //   console.log(result)
 
@@ -52,3 +52,20 @@
 
 
 
+const dublicateNumber = (array) => {
+    const nonDublicate = new Set();
+    const dublicate = [];
+
+    for (ele of array) {
+        if (nonDublicate.has(ele)) {
+            dublicate.push(ele)
+        } else {
+            nonDublicate.add(ele)
+        }
+    }
+    return dublicate
+}
+
+const myArray = [1, 2, 3, 4, 5, 6, 4, 5, 6, 7]
+const result = dublicateNumber(myArray)
+console.log(result)
