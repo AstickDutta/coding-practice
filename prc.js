@@ -4,29 +4,29 @@
 //   Example: For an input array [1, 3, 2, 7, 4, 6] with p=3 and d=0
 //   the expected result would be [7, 4, 6, 1, 3, 2] with the array shifted left by 3 positions.
 
-function a (arr, d, n){
-    let temp =  new Array(n)
+// function a (arr, d, n){
+//     let temp =  new Array(n)
 
-    let f = 0
-    for(let i = d; i<n; i++){   //O(n)
-        temp[f] = arr[i]
-        f++
-    }
+//     let f = 0
+//     for(let i = d; i<n; i++){   //O(n)
+//         temp[f] = arr[i]
+//         f++
+//     }
 
-    for(let i =0; i<d; i++){
-        temp[f] = arr[i]
-        f++
-    }
+//     for(let i =0; i<d; i++){
+//         temp[f] = arr[i]
+//         f++
+//     }
 
-    for(let i =0; i<n; i++){
-        console.log(temp[i])
-    }
-}
+//     for(let i =0; i<n; i++){
+//         console.log(temp[i])
+//     }
+// }
 
-let arr = [1, 3, 2, 7, 4, 6]
-let n = arr.length
-let d = 3
-a(arr, d, n)
+// let arr = [1, 3, 2, 7, 4, 6]
+// let n = arr.length
+// let d = 3
+// a(arr, d, n)
 
 //question??
 // Write a JavaScript function to check whether an 'input' is a string or not.
@@ -38,13 +38,13 @@ a(arr, d, n)
 // false
 
 //Answer
-function a (input){
-    if(typeof input === 'string'){
-        return true
-    }else return false
+// function a (input){
+//     if(typeof input === 'string'){
+//         return true
+//     }else return false
 
-}
-console.log(a(99))
+// }
+// console.log(a(99))
 
 //Question??
 // Write a JavaScript function to check whether a string is blank or not.
@@ -56,12 +56,12 @@ console.log(a(99))
 // false
 
 //Answer :
-let k = function s(input){
-    if( input == '' || typeof input === 'number' || input == ""){
-        return false
-    }else return true
-  }
-  console.log(k(null));
+// let k = function s(input){
+//     if( input == '' || typeof input === 'number' || input == ""){
+//         return false
+//     }else return true
+//   }
+//   console.log(k(null));
 
 //Question??
 // Write a JavaScript function to split a string and convert it into an array of words.
@@ -71,11 +71,11 @@ let k = function s(input){
 // ["Robin", "Singh"]
 
 //Answer:
-let str = function (input){
-    return input.trim().split(" ")
+// let str = function (input){
+//     return input.trim().split(" ")
 
-}
-console.log(str("robin singh"))
+// }
+// console.log(str("robin singh"))
 
 //Question??
 // Write a JavaScript function to extract a specified number of characters from a string. Go to the editor
@@ -91,14 +91,14 @@ console.log(str("robin singh"))
 //     console.log(checkString("robindra",4))
 // }
 
-let checkString = function (str,length){
-    if(typeof str === "string" && length >0){
-        return str.slice(0,length)
-    }
-    console.log(checkString("robindra",4))
-}
-let res = checkString("robindra",4)
-console.log(res)
+// let checkString = function (str,length){
+//     if(typeof str === "string" && length >0){
+//         return str.slice(0,length)
+//     }
+//     console.log(checkString("robindra",4))
+// }
+// let res = checkString("robindra",4)
+// console.log(res)
 
 // let checkString = function (str,length){
 //     for(; str.length; i++){
@@ -109,17 +109,17 @@ console.log(res)
 // }
 //         console.log(checkString("robindra",4))
 
-let checkeString = function (str,length){
-    let x = ''
-      for(; i<str.length; i++){
-          if(typeof str === "string" && length > 0){
-              x += str[i]
-              length--
-          }
-      }
-      return x
-  }
-          console.log(checkeString("robindra",3))
+// let checkeString = function (str,length){
+//     let x = ''
+//       for(; i<str.length; i++){
+//           if(typeof str === "string" && length > 0){
+//               x += str[i]
+//               length--
+//           }
+//       }
+//       return x
+//   }
+//           console.log(checkeString("robindra",3))
 
 //Question?
 // Write a JavaScript function to convert a string in abbreviated form.
@@ -127,18 +127,18 @@ let checkeString = function (str,length){
 // console.log(abbrev_name("Robin Singh"));
 // "Robin S."
 
-let strng = function (str) {
-  let result = "";
-  ;
-  for (i = 0; i < str.length; i++) {
-    if (str[i] !== " ") {
-      result += str[i];
-    } else break;
-  }
-  result += " " + str[++i] + ".";
-  return result;
-};
-console.log(strng("Sourav Bauri"));
+// let strng = function (str) {
+//   let result = "";
+//   ;
+//   for (i = 0; i < str.length; i++) {
+//     if (str[i] !== " ") {
+//       result += str[i];
+//     } else break;
+//   }
+//   result += " " + str[++i] + ".";
+//   return result;
+// };
+// console.log(strng("Sourav Bauri"));
 
 //questions?
 // Write a JavaScript function to hide email addresses to protect from unauthorized user.
@@ -147,78 +147,77 @@ console.log(strng("Sourav Bauri"));
 // "robin...@example.com"
 
 //answer:
-let strng2 = function (str){
-    result = ""
+// let strng2 = function (str){
+//     result = ""
 
-    for(let i = 0; i<str.length; i++){
-       if(str[i] !== "_"){
-            result += str[i]
-        } else{ result += "..." ; break}
-    }
-    for(let i = 0; i<str.length; i++){
-        if (str[i] == "@")
-       break
-}
+//     for(let i = 0; i<str.length; i++){
+//        if(str[i] !== "_"){
+//             result += str[i]
+//         } else{ result += "..." ; break}
+//     }
+//     for(let i = 0; i<str.length; i++){
+//         if (str[i] == "@")
+//        break
+// }
 
-for (let i = 0;i<str.length; i++){
-    result+= str[i]
-}
-return result
-}
-console.log(strng2("sourav_bauri@gmail.com"))
+// for (let i = 0;i<str.length; i++){
+//     result+= str[i]
+// }
+// return result
+// }
+// console.log(strng2("sourav_bauri@gmail.com"))
 
-let strng1 = function(str) {
-  let result = "";
+// let strng1 = function(str) {
+//   let result = "";
 
-  for (let i = 0; i < str.length; i++) {
-    if (str[i] !== "_") {
-      result += str[i];
-    } else {
-      result += "...";
-      break;
-    }
+//   for (let i = 0; i < str.length; i++) {
+//     if (str[i] !== "_") {
+//       result += str[i];
+//     } else {
+//       result += "...";
+//       break;
+//     }
 
-    if (str[i] === "@") {
-      for (let j = i; j < str.length; j++) {
-        result += str[j];
-      }
-      break;
-    }
-  }
+//     if (str[i] === "@") {
+//       for (let j = i; j < str.length; j++) {
+//         result += str[j];
+//       }
+//       break;
+//     }
+//   }
 
-  return result;
-};
+//   return result;
+// };
 
-console.log(strng1("sourav_bauri@gmail.com"));
+// console.log(strng1("sourav_bauri@gmail.com"));
 
-function protect_email(email) {
-  let atIndex = -1;
-  let dotIndex = -1;
-  
-  for (let i = 0; i < email.length; i++) {
-    if (email[i] === "@") {
-      atIndex = i;
-    } else if (email[i] === ".") {
-      dotIndex = i;
-    }
-    
-    if (atIndex !== -1 && dotIndex !== -1) {
-      break;
-    }
-  }
-  
-  let username = "";
-  for (let i = 0; i < atIndex; i++) {
-    username += email[i];
-  }
-  
-  let hiddenEmail = username.substring(0, 4) + "...@" + email.substring(atIndex + 1);
-  
-  return hiddenEmail;
-}
+// function protect_email(email) {
+//   let atIndex = -1;
+//   let dotIndex = -1;
 
-console.log(protect_email("arindam_dan@gmail.com"));
+//   for (let i = 0; i < email.length; i++) {
+//     if (email[i] === "@") {
+//       atIndex = i;
+//     } else if (email[i] === ".") {
+//       dotIndex = i;
+//     }
 
+//     if (atIndex !== -1 && dotIndex !== -1) {
+//       break;
+//     }
+//   }
+
+//   let username = "";
+//   for (let i = 0; i < atIndex; i++) {
+//     username += email[i];
+//   }
+
+//   let hiddenEmail = username.substring(0, 4) + "...@" + email.substring(atIndex + 1);
+
+//   return hiddenEmail;
+// }
+
+// console.log(protect_email("arindam_dan@gmail.com"));
 
 // questions?
 // Write a JavaScript function to parameterize a string.
@@ -226,18 +225,17 @@ console.log(protect_email("arindam_dan@gmail.com"));
 // console.log(string_parameterize("Robin Singh from USA."));
 // "robin-singh-from-usa"
 
-let string_parameterize = function(str){
- let result = ""
+// let string_parameterize = function(str){
+//  let result = ""
 
-
-    for(let i =0 ; i<str.length; i++){
-        if(str[i] == " "){
-           result +=  "-"
-        }else result += str[i].toLowerCase()
-    }
-    return result
-}
-console.log(string_parameterize("Robin Singh from USA."))
+//     for(let i =0 ; i<str.length; i++){
+//         if(str[i] == " "){
+//            result +=  "-"
+//         }else result += str[i].toLowerCase()
+//     }
+//     return result
+// }
+// console.log(string_parameterize("Robin Singh from USA."))
 
 //question?
 // Write a JavaScript function to capitalize the first letter of a string.
@@ -246,16 +244,16 @@ console.log(string_parameterize("Robin Singh from USA."))
 // "Js string exercises"
 
 //answer:
-let capitalize = function(str){
-           let str1 = ""
-           str1 += str[0].toUpperCase()
-           for(let i = 1; i<str.length; i++){
-            str1 += str[i]
-           }
-            return str1
-        }
+// let capitalize = function(str){
+//            let str1 = ""
+//            str1 += str[0].toUpperCase()
+//            for(let i = 1; i<str.length; i++){
+//             str1 += str[i]
+//            }
+//             return str1
+//         }
 
-console.log(capitalize('js string exercises'));
+// console.log(capitalize('js string exercises'));
 
 //questions?
 // Write a JavaScript function that takes a string which has lower and upper case letters as a parameter and converts upper case letters to lower case, and lower case letters to upper case.
@@ -290,7 +288,6 @@ console.log(capitalize('js string exercises'));
 
 // console.log(capcase("shreya DuBey"));
 
-
 // for (var i = 0; i < 3; i++) {
 
 //     setTimeout(function() { alert(i); }, 1000 + i);
@@ -305,58 +302,58 @@ console.log(capitalize('js string exercises'));
 
 //   console.log(b);
 
- function StringChallenge(sen) {
+//  function StringChallenge(sen) {
 
-//     // code goes here
-      const codewords = sen.split(" ");
-       let newword = "";
-       let max = 0;
-       for(let word of codewords){
-         const createword = word.replace(/[^a-zA-Z0-9]/gi,'');
-           if(createword.length>max){
-             newword = createword
-             max = createword.length
-           }
-       }
-       var token = "o8vpxlnyc7ad"
-       var histri = newword + token;
-        var d1 = histri.split("");
-        for(let i=3;i<d1.length-1;i+=4){
-          d1[i]= "_"
-              var arustr = d1.join("");
-        }
+// //     // code goes here
+//       const codewords = sen.split(" ");
+//        let newword = "";
+//        let max = 0;
+//        for(let word of codewords){
+//          const createword = word.replace(/[^a-zA-Z0-9]/gi,'');
+//            if(createword.length>max){
+//              newword = createword
+//              max = createword.length
+//            }
+//        }
+//        var token = "o8vpxlnyc7ad"
+//        var histri = newword + token;
+//         var d1 = histri.split("");
+//         for(let i=3;i<d1.length-1;i+=4){
+//           d1[i]= "_"
+//               var arustr = d1.join("");
+//         }
 
-       return arustr;
-  }
+//        return arustr;
+//   }
 
-  // keep this function call here
-  console.log(StringChallenge(readline()));
+//   // keep this function call here
+//   console.log(StringChallenge(readline()));
 
-  function StringChallenge(str) {
+// function StringChallenge(str) {
 
-    // code goes here
+//   // code goes here
 
-     var obj = {};
-     var newarr = [];
-     for(let i=0;i<str.length;i++){
-       obj[str[i]] = (obj[str[i]]||0)+1;
-     }
-         var f = Object.keys(obj);
-         var g = Object.values(obj);
-         for(let j=0;j<f.length;j++){
-           newarr.push(g[j]);
-           newarr.push(f[j]);
-         }
-         var token = "o8vpxlnyc7ad";
-         var dul = newarr.join("");
-         var nul = dul + token;
-         var d = nul.split("");
-         for(let k=3;k<d.length-1;k+=4){
-           d[k] = "_"
-           var a = d.join("")
-         }
-         return a;
-  }
+//    var obj = {};
+//    var newarr = [];
+//    for(let i=0;i<str.length;i++){
+//      obj[str[i]] = (obj[str[i]]||0)+1;
+//    }
+//        var f = Object.keys(obj);
+//        var g = Object.values(obj);
+//        for(let j=0;j<f.length;j++){
+//          newarr.push(g[j]);
+//          newarr.push(f[j]);
+//        }
+//        var token = "o8vpxlnyc7ad";
+//        var dul = newarr.join("");
+//        var nul = dul + token;
+//        var d = nul.split("");
+//        for(let k=3;k<d.length-1;k+=4){
+//          d[k] = "_"
+//          var a = d.join("")
+//        }
+//        return a;
+// }
 
 //   // keep this function call here
 //   console.log(StringChallenge(readline()));
@@ -374,17 +371,17 @@ console.log(capitalize('js string exercises'));
 
 //answer
 
-let camelize = function (str) {
-  let result = "";
-  result += str[0].toLowerCase();
-  for (let i = 1; i < str.length; i++) {
-    if (str[i] == " ") {
-      result += str[++i].toUpperCase();
-    } else result += str[i];
-  }
-  return result;
-};
-console.log(camelize("JavaScript exercises"));
+// let camelize = function (str) {
+//   let result = "";
+//   result += str[0].toLowerCase();
+//   for (let i = 1; i < str.length; i++) {
+//     if (str[i] == " ") {
+//       result += str[++i].toUpperCase();
+//     } else result += str[i];
+//   }
+//   return result;
+// };
+// console.log(camelize("JavaScript exercises"));
 
 //Question?
 
@@ -398,18 +395,18 @@ console.log(camelize("JavaScript exercises"));
 // "hello_world"
 
 //answer
-let uncamelize = function (str, str1) {
-  let result = "";
-  for (let i = 0; i < str.length; i++) {
-    if (str[i] == str[i].toUpperCase()) {
-      if (str1 == undefined) {
-        result += " " + str[i].toLowerCase();
-      } else result += str1 + str[i].toLowerCase();
-    } else result += str[i];
-  }
-  return result;
-};
-console.log(uncamelize("helloWorld", "_"));
+// let uncamelize = function (str, str1) {
+//   let result = "";
+//   for (let i = 0; i < str.length; i++) {
+//     if (str[i] == str[i].toUpperCase()) {
+//       if (str1 == undefined) {
+//         result += " " + str[i].toLowerCase();
+//       } else result += str1 + str[i].toLowerCase();
+//     } else result += str[i];
+//   }
+//   return result;
+// };
+// console.log(uncamelize("helloWorld", "_"));
 
 //Question
 // Write a JavaScript function to concatenates a given string n times (default is 1).
@@ -422,18 +419,18 @@ console.log(uncamelize("helloWorld", "_"));
 // "Ha!Ha!Ha!"
 
 //Answer
-let repeat = function (str, n) {
-  let result = "";
+// let repeat = function (str, n) {
+//   let result = "";
 
-  if (n == 0 || n == undefined || n == 1) {
-    return str;
-  }
-  for (let i = 1; i <= n; i++) {
-    result += str;
-  }
-  return result;
-};
-console.log(repeat("Ha!", 3));
+//   if (n == 0 || n == undefined || n == 1) {
+//     return str;
+//   }
+//   for (let i = 1; i <= n; i++) {
+//     result += str;
+//   }
+//   return result;
+// };
+// console.log(repeat("Ha!", 3));
 
 //Question?
 // Write a JavaScript function to insert a string within a string at a particular position (default is 1).Go to the editor
@@ -446,45 +443,44 @@ console.log(repeat("Ha!", 3));
 // "We are doing some JavaScript exercises."
 
 //Answer:
-let insert = function (str, str1, n) {
-  let result = "";
+// let insert = function (str, str1, n) {
+//   let result = "";
 
-  if (str1 == undefined) {
-    return str;
-  }
-  if (n == undefined) {
-    return (result = str1 + str);
-  }
-  for (let i = 0; i < n; i++) {
-    result += str[i];
-  }
-  result += str1;
+//   if (str1 == undefined) {
+//     return str;
+//   }
+//   if (n == undefined) {
+//     return (result = str1 + str);
+//   }
+//   for (let i = 0; i < n; i++) {
+//     result += str[i];
+//   }
+//   result += str1;
 
-  for (let i = n; i < str.length; i++) {
-    result += str[i];
-  }
-  return result;
-};
-console.log(insert("We are doing some exercises.",'JavaScript ',18));
+//   for (let i = n; i < str.length; i++) {
+//     result += str[i];
+//   }
+//   return result;
+// };
+// console.log(insert("We are doing some exercises.",'JavaScript ',18));
 
-const counter = (function() {
-  let count = 0;
-  return {
-    increment() {
-      count++;
-    },
-    decrement() {
-      count--;
-    },
-    getCount() {
-      return count;
-    }
-  }
-})();
+// const counter = (function() {
+//   let count = 0;
+//   return {
+//     increment() {
+//       count++;
+//     },
+//     decrement() {
+//       count--;
+//     },
+//     getCount() {
+//       return count;
+//     }
+//   }
+// })();
 
-counter.increment();
-console.log(counter.getCount()); // Output: 1
-
+// counter.increment();
+// console.log(counter.getCount()); // Output: 1
 
 //Questions?
 
@@ -500,40 +496,40 @@ console.log(counter.getCount()); // Output: 1
 // "301st"
 // "402nd"
 
-let humanize_format = function (n) {
-  let last_dgit = n % 10;
+// let humanize_format = function (n) {
+//   let last_dgit = n % 10;
 
-  if (n == undefined) {
-    return "please put the value of n";
-  }
+//   if (n == undefined) {
+//     return "please put the value of n";
+//   }
 
-  if (last_dgit == 1) {
-    return n + "st";
-  }
+//   if (last_dgit == 1) {
+//     return n + "st";
+//   }
 
-  if (last_dgit == 2) {
-    return n + "nd";
-  }
+//   if (last_dgit == 2) {
+//     return n + "nd";
+//   }
 
-  if (last_dgit == 3) {
-    return n + "rd";
-  }
-  return n + "th";
-};
-console.log(humanize_format(657));
+//   if (last_dgit == 3) {
+//     return n + "rd";
+//   }
+//   return n + "th";
+// };
+// console.log(humanize_format(657));
 
 //reverse String with recursion
-function  reverse (str){
-    if(str.length<=1) return str
-    return reverse(str.slice(1)) + str[0]
-}
-console.log(reverse("hello"))
+// function  reverse (str){
+//     if(str.length<=1) return str
+//     return reverse(str.slice(1)) + str[0]
+// }
+// console.log(reverse("hello"))
 
-let arr1 = [8,5,3,6,8,44,66,23,45]
-arr1.sort(function(a,b){
-    return (b - a)
-})
-console.log(arr1)
+// let arr1 = [8,5,3,6,8,44,66,23,45]
+// arr1.sort(function(a,b){
+//     return (b - a)
+// })
+// console.log(arr1)
 
 //binary_search.....
 
@@ -2119,7 +2115,6 @@ console.log(arr1)
 
 // console.log(reverseString("hello"));
 
-
 //Write a function that takes an array of strings and returns a new array with all the strings capitalized.
 
 // function capitalString(str){
@@ -2153,24 +2148,40 @@ console.log(arr1)
 
 // console.log(reverseString("hello"))
 
-function twoSum(nums, target) {
-  let left = 0;
-  let right = nums.length - 1;
-  while (left < right) {
-    let sum = nums[left] + nums[right];
-    if (sum === target) {
-      return [left, right];
-    } else if (sum < target) {
-      left++;
+// function twoSum(nums, target) {
+//   let left = 0;
+//   let right = nums.length - 1;
+//   while (left < right) {
+//     let sum = nums[left] + nums[right];
+//     if (sum === target) {
+//       return [left, right];
+//     } else if (sum < target) {
+//       left++;
+//     } else {
+//       right--;
+//     }
+//   }
+// }
+
+// let nums = [2,4,3,5,6,7]
+// let target = 7
+
+function findPairTwoSumCheck(num, target) {
+  let indexes = {};
+  let defferenc;
+
+  for (let i = 0; i < num.length; i++) {
+    defferenc = target - num[i];
+    if (indexes[defferenc] !== undefined) {
+      return [indexes[defferenc], i];
     } else {
-      right--;
+      indexes[num[i]] = i;
     }
   }
+  return [];
 }
 
-let nums = [2,4,3,5,6,7]
-let target = 7
-
+console.log(findPairTwoSumCheck([1, 2, 3, 4, 5, 6, 7], 8));
 
 // function maxSubArray(nums) {
 //   let maxSum = nums[0];
