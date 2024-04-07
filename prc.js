@@ -2153,23 +2153,23 @@ console.log(arr1)
 
 // console.log(reverseString("hello"))
 
-// function twoSum(nums, target) {
-//   let left = 0;
-//   let right = nums.length - 1;
-//   while (left < right) {
-//     let sum = nums[left] + nums[right];
-//     if (sum === target) {
-//       return [left, right];
-//     } else if (sum < target) {
-//       left++;
-//     } else {
-//       right--;
-//     }
-//   }
-// }
+function twoSum(nums, target) {
+  let left = 0;
+  let right = nums.length - 1;
+  while (left < right) {
+    let sum = nums[left] + nums[right];
+    if (sum === target) {
+      return [left, right];
+    } else if (sum < target) {
+      left++;
+    } else {
+      right--;
+    }
+  }
+}
 
-// let nums = [2,4,3,5,6,7]
-// let target = 7
+let nums = [2,4,3,5,6,7]
+let target = 7
 
 
 // function maxSubArray(nums) {
@@ -2186,17 +2186,17 @@ console.log(arr1)
 
 // console.log(maxSubArray([4,1,7,3]))
 
-function maxSubArray(nums) {
-  let maxSum = nums[0];
-  let currentSum = nums[0];
+// function maxSubArray(nums) {
+//   let maxSum = nums[0];
+//   let currentSum = nums[0];
 
-  for (let i = 1; i < nums.length; i++) {
-    currentSum = Math.max(nums[i], currentSum + nums[i]);
-    maxSum = Math.max(maxSum, currentSum);
+//   for (let i = 1; i < nums.length; i++) {
+//     currentSum = Math.max(nums[i], currentSum + nums[i]);
+//     maxSum = Math.max(maxSum, currentSum);
 
-  }
+//   }
 
-  return maxSum;
-}
+//   return maxSum;
+// }
 
-console.log(maxSubArray([1, -2, 3, 4, -1, 2, 1, -5, 4]));
+// console.log(maxSubArray([1, -2, 3, 4, -1, 2, 1, -5, 4]));
