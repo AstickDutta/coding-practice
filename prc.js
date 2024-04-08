@@ -2136,17 +2136,17 @@
 
 // console.log(capitalizeStrings("hello"))
 
-// function reverseString(str) {
-//   let reversedStr = '';
+function reverseString(str) {
+  let reversedStr = '';
 
-//   for (let i = str.length - 1; i >= 0; i--) {
-//     reversedStr += str[i];
-//   }
+  for (let i = str.length - 1; i >= 0; i--) {
+    reversedStr += str[i];
+  }
 
-//   return reversedStr;
-// }
+  return reversedStr;
+}
 
-// console.log(reverseString("hello"))
+console.log(reverseString("hello"))
 
 // function twoSum(nums, target) {
 //   let left = 0;
@@ -2182,6 +2182,8 @@ function findPairTwoSumCheck(num, target) {
 }
 
 console.log(findPairTwoSumCheck([1, 2, 3, 4, 5, 6, 7], 8));
+console.log(findPairTwoSumCheck([1, -2, 3, -4, 10, 11, 7], 13));
+console.log(findPairTwoSumCheck([3, 4, -5, 6, -7], 1));
 
 // function maxSubArray(nums) {
 //   let maxSum = nums[0];
