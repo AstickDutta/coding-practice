@@ -2075,19 +2075,19 @@
 
 // let numbers = [1,2,3,4,5,100000]
 
-// function maxNumber(numbers) {
-//   let max = numbers[0];
+function maxNumber(numbers) {
+  let max = numbers[0];
 
-//   for (let i = 1; i < numbers.length; i++) {
-//     if (numbers[i] > max) {
-//       max = numbers[i];
-//     }
-//   }
+  for (let i = 1; i < numbers.length; i++) {
+    if (numbers[i] > max) {
+      max = numbers[i];
+    }
+  }
 
-//   return max;
-// }
+  return max;
+}
 
-// console.log(maxNumber(numbers))
+console.log(maxNumber(numbers))
 
 //Write a function that prompts the user to enter a number and then returns whether that number is even or odd.
 
@@ -2136,17 +2136,17 @@
 
 // console.log(capitalizeStrings("hello"))
 
-function reverseString(str) {
-  let reversedStr = '';
+// function reverseString(str) {
+//   let reversedStr = '';
 
-  for (let i = str.length - 1; i >= 0; i--) {
-    reversedStr += str[i];
-  }
+//   for (let i = str.length - 1; i >= 0; i--) {
+//     reversedStr += str[i];
+//   }
 
-  return reversedStr;
-}
+//   return reversedStr;
+// }
 
-console.log(reverseString("hello"))
+// console.log(reverseString("hello"))
 
 // function twoSum(nums, target) {
 //   let left = 0;
