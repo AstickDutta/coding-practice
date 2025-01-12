@@ -1,0 +1,26 @@
+##_Problem:
+** Given a sorted array, remove duplicate elements in-place such that each unique element appears only once. 
+The function should return the new length of the array containing only unique elements.
+
+@@ Answer:
+
+"*" Algorithm (Two-Pointer Technique)
+  * The two-pointer technique is used to solve this problem efficiently.
+
+"*" Initial Setup:
+
+  * i is the slow pointer that marks the position of the last unique element in the array.
+  * j is the fast pointer that traverses the array, looking for new unique elements.
+"*" Logic:
+
+  * Start with both pointers (i and j).
+  * Compare the elements at positions i and j.
+  * If array[j] is not equal to array[i]:
+  * Move i one step forward.
+  * Copy the value from array[j] to array[i].
+  * If they are equal, continue incrementing j (skip duplicates).
+  
+"*" Result:
+
+  * At the end, the first i + 1 positions of the array will contain the unique elements.
+  * The value i + 1 is the length of the array with unique elements.
